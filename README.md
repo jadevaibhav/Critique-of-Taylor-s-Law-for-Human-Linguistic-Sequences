@@ -32,23 +32,23 @@ The standard deviation versus mean on log-log graph, showing low deviation from 
 When experimented on randomly sampled data from ‘Moby Dick’, the exponent was found to be 0.5, As expected from random sampling. The paper also tested text generated on character-based LSTM, which was trained on complete works of Shakespeare. The exponent was found to be 0.5, same as a I.I.D. process.  Which shows that model was unable to capture the word-level correlation. But for machine translation model, the paper found out the text generated had Taylor’s exponent equivalent to that of the original text.
 
 ### Merits of the paper :
-Proves that Taylor’s power law analysis is relevant in the context of human linguistics.
-Taylor’s exponent can be used as continuous quantification based upon lexical fluctuations. I.e., between natural texts and fixed-form texts as programming languages or music.
-The variation of Taylor’s exponent was lower than the analysis applied to other contexts, showing strong relevance of such fluctuation analysis for human linguistics.
-Can be used as a measure to compare model performance based on underlying language, aside from application performance. 
-Also showed the limitations of character-based LSTM, which could not capture the underlying natural text. 
+* Proves that Taylor’s power law analysis is relevant in the context of human linguistics.
+* Taylor’s exponent can be used as continuous quantification based upon lexical fluctuations. I.e., between natural texts and fixed-form texts as programming languages or music.
+* The variation of Taylor’s exponent was lower than the analysis applied to other contexts, showing strong relevance of such fluctuation analysis for human linguistics.
+* Can be used as a measure to compare model performance based on underlying language, aside from application performance. 
+* Also showed the limitations of character-based LSTM, which could not capture the underlying natural text. 
 
 ### Limitations of the paper :
-The paper shows that exponent is only slightly dependent on document size, although it varies greatly with segment size. Hence, the document needs to have a large number of words, so we can have segments of large size,and also more number of these segments. So, such analysis can’t be performed for short-length texts like tweets or emails.
-The paper uses books and news articles for data source. But, there are many more forms of sources which should be considered.
-As stated in the paper, the Taylor’s exponent could not act as differentiator between languages.
+* The paper shows that exponent is only slightly dependent on document size, although it varies greatly with segment size. Hence, the document needs to have a large number of words, so we can have segments of large size,and also more number of these segments. So, such analysis can’t be performed for short-length texts like tweets or emails.
+* The paper uses books and news articles for data source. But, there are many more forms of sources which should be considered.
+* As stated in the paper, the Taylor’s exponent could not act as differentiator between languages.
 
 ### Possible extensions and applications of the paper :
-While calculating the frequencies, the paper does not do Lemmatization, i.e., the words are considered in their original forms and semantically equivalent words are not clubbed together while considering frequencies. As the analysis is done on multiple languages, this leads to uniformity while comparing the languages. But, fluctuation analysis with lemmatization might provide important insights.
-As covered in limitation section, the analysis could be applied to various forms of natural texts such as emails, scripts, legal documents, screen-plays, poems etc. where the limitation of text size can somewhat be mitigated. 
-It would also be interesting to see the analysis of the above mentioned formats of texts in different languages, across different scripts. Doing such analysis on variety of Indian languages would also be insightful as we have such diversity in languages.
-As stated in the paper, other fluctuation analysis can be done, like Zipfs’ law or Heaps’ law.
-As discussed in related works of the paper, Taylor’s power law is studied across multiple domains such as ecology, life science, physics, finance, and human dynamics (shown by Eisler, Bartos, and Kertész, 2007). The paper itself is one such analysis applied towards human linguistics. 
+* While calculating the frequencies, the paper does not do Lemmatization, i.e., the words are considered in their original forms and semantically equivalent words are not clubbed together while considering frequencies. As the analysis is done on multiple languages, this leads to uniformity while comparing the languages. But, fluctuation analysis with lemmatization might provide important insights.
+* As covered in limitation section, the analysis could be applied to various forms of natural texts such as emails, scripts, legal documents, screen-plays, poems etc. where the limitation of text size can somewhat be mitigated. 
+* It would also be interesting to see the analysis of the above mentioned formats of texts in different languages, across different scripts. Doing such analysis on variety of Indian languages would also be insightful as we have such diversity in languages.
+* As stated in the paper, other fluctuation analysis can be done, like Zipfs’ law or Heaps’ law.
+* As discussed in related works of the paper, Taylor’s power law is studied across multiple domains such as ecology, life science, physics, finance, and human dynamics (shown by Eisler, Bartos, and Kertész, 2007). The paper itself is one such analysis applied towards human linguistics. 
 As stated in the definition, for complex systems of interacting elements, the activity (standard deviation) of element increase with average activity (mean). So, we may find Taylor’s power law behaviour underlined for these sort of systems.
 
 
